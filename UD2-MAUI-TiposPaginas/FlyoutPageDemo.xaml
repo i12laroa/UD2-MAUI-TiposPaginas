@@ -6,19 +6,80 @@
              FlyoutLayoutBehavior="Split">
     <FlyoutPage.Flyout>
         <ContentPage Title="My app">
+
+            <FlexLayout Direction="Column">
             <Label Text="Hello from my Flyout"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"/>
 
-        </ContentPage>
-    </FlyoutPage.Flyout>
+                <Label Text="Inicio"
+                         TextColor="Blue"
+                       TextDecorations="Underline"
+                       HorizontalOptions="Center"
+                         VerticalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                
+                <Label Text="Página 1 de Flyout"
+                        TextColor="Blue"
+                        TextDecorations="Underline"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+                        <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                          </Label.GestureRecognizers>
+                </Label>
+                <Button Text="Contacto" />
 
+            </FlexLayout>
+
+        </ContentPage>
+        
+    </FlyoutPage.Flyout>
+ 
     <FlyoutPage.Detail>
-        <ContentPage>
-            <Label Text="Hello from detail"
-                 HorizontalTextAlignment="Center"
-                  VerticalTextAlignment="Center"/>
+        <ContentPage x:Name="PaginaDetailInicio">
+           
+            <ScrollView>
+                <VerticalStackLayout
+                  Padding="30,0"
+                   Spacing="25">
+                    
+                    <Label Text="Hello from detail"
+                    HorizontalTextAlignment="Center"
+                     VerticalTextAlignment="Center"/>
+                    
+                    
+                    <Image
+                     Source="dotnet_bot.png"
+                     HeightRequest="185"
+                      Aspect="AspectFit"
+                         SemanticProperties.Description="dot net bot in a race car number eight" />
+
+                    <Label
+                      Text="Hello, World!"
+                     Style="{StaticResource Headline}"
+                     SemanticProperties.HeadingLevel="Level1" />
+
+                    <Label
+                           Text="Welcome to &#10;.NET Multi-platform App UI"
+                            Style="{StaticResource SubHeadline}"
+                             SemanticProperties.HeadingLevel="Level2"
+                             SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+                    <Button
+              x:Name="CounterBtn"
+              Text="Click me" 
+             
+              HorizontalOptions="Fill" />
+                </VerticalStackLayout>
+            </ScrollView>
+
+
         </ContentPage>
         
     </FlyoutPage.Detail>
+    
 </FlyoutPage>

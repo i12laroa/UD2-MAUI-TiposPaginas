@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UD2_MAUI_TiposPaginas.TabbedPageDemo"
              Title="TabbedPageDemo">
-    <ContentPage Title="Pagina1"></ContentPage>
+    <ContentPage Title="Pagina1" ></ContentPage>
     <ContentPage Title="Pagina2"></ContentPage>
     <ContentPage Title="Pagina3"></ContentPage>
 </TabbedPage>
