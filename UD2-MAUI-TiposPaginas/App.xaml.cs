@@ -6,12 +6,13 @@
         {
             InitializeComponent();
 
-          //  var navPage = new NavigationPage(new MainPage());
+            var navPage = new NavigationPage(new MainPage());
             //Modificar los atributos de las barras de navegación
-          //  navPage.BarBackground = Colors.Chocolate;
-          //  navPage.BarTextColor = Colors.White;
-            // MainPage = navPage;
-             MainPage = new FlyoutPageDemo();
+           navPage.BarBackground = Colors.Chocolate;
+            navPage.BarTextColor = Colors.White;
+             MainPage = navPage;
+
+          //   MainPage = new FlyoutPageDemo();
            // MainPage= new TabbedPageDemo();
         }
     }
