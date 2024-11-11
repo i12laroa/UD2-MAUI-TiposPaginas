@@ -63,16 +63,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ContentPageDemo.xaml">
+	  <MauiXaml Update="NavigationPages\ContentPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FlyoutPageDemo.xaml">
+	  <MauiXaml Update="FlyoutPages\FlyoutPageDemo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pagina1Flyout.xaml">
+	  <MauiXaml Update="FlyoutPages\Pagina1Flyout.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="TabbedPageDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TabbedPages\Citas.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TabbedPages\Contacto.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TabbedPages\Servicios.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
