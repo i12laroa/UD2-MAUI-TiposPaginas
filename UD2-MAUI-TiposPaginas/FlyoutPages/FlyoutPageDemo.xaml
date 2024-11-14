@@ -5,10 +5,10 @@
              Title="FlyoutPageDemo"
              FlyoutLayoutBehavior="Split">
     <FlyoutPage.Flyout>
-        <ContentPage Title="My app">
+        <ContentPage Title="Menú App">
 
             <FlexLayout Direction="Column">
-            <Label Text="Hello from my Flyout"
+                <Label Text="Hello from my Flyout"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"/>
 
@@ -21,20 +21,17 @@
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
                     </Label.GestureRecognizers>
                 </Label>
-                
+
                 <Label Text="Página 1 de Flyout"
                         TextColor="Blue"
                         TextDecorations="Underline"
                         HorizontalOptions="Center"
                         VerticalOptions="Center">
-                        <Label.GestureRecognizers>
+                    <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                          </Label.GestureRecognizers>
+                    </Label.GestureRecognizers>
                 </Label>
-                <Button Text="Contacto" />
-
             </FlexLayout>
-
         </ContentPage>
         
     </FlyoutPage.Flyout>
