@@ -4,6 +4,7 @@
              x:Class="UD2_MAUI_TiposPaginas.FlyoutPageDemo"
              Title="FlyoutPageDemo"
              FlyoutLayoutBehavior="Split">
+
     <FlyoutPage.Flyout>
         <ContentPage Title="Menú App">
 
