@@ -13,6 +13,7 @@ public partial class FlyoutPageDemo : FlyoutPage
         // Inicializar las instancias si es necesario
         pagina1Instance = new Pagina1Flyout();
 
+
     }
 
     
