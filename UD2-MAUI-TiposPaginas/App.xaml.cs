@@ -21,7 +21,7 @@
         }
         protected override Window CreateWindow(IActivationState? activationState)
         {
-           // return new Window(new TabbedPageDemo());
+            return new Window(new TabbedPageDemo());
         }
     }
 }
